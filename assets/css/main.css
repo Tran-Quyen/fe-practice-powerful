@@ -8,7 +8,7 @@ html {
   color: #333;
   font-family: Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.9;
 }
 
 body {
@@ -20,6 +20,16 @@ main {
   padding: 10px 0;
 }
 
+a {
+  color: #7f7f7f;
+  text-decoration: none;
+  transition: 0.3s color;
+}
+
+a:hover {
+  color: #000;
+}
+
 ul {
   list-style: none;
 }
@@ -27,6 +37,7 @@ ul {
 .clearfix {
   zoom: 1;
 }
+
 .clearfix:after {
   clear: both;
   content: ".";
@@ -37,59 +48,40 @@ ul {
 }
 
 /* Layout */
-header {
+footer {
   margin: 30px auto;
   position: relative;
   width: 1140px;
 }
 
-header #logo {
+footer div {
   float: left;
 }
 
-header .navigation {
-  float: left;
-  height: 50px;
+footer div h4 {
+  margin-bottom: 27px;
 }
 
-header .navigation li {
-  display: inline-block;
-  padding: 0 13px;
+footer .air {
+  max-width: 490px;
+  width: 42.98%;
 }
 
-header .navigation li a {
-  display: block;
-  line-height: 50px;
-  color: #1f1f1f;
-  letter-spacing: 1px;
-  border-bottom: 2px solid transparent;
-  text-decoration: none;
-  transition: 0.3s color, 1s border;
-  will-change: color, border;
+footer .links {
+  max-width: 195px;
+  width: 17.1%;
 }
 
-header .navigation li.active a,
-header .navigation li a:hover {
-  color: #00aeef;
-  border-bottom: 2px solid #00aeef;
+footer .categories {
+  max-width: 195px;
+  width: 17.1%;
 }
 
-header .login {
-  position: absolute;
-  right: 0;
-  top: 4px;
+footer .contact {
+  max-width: 260px;
+  width: 22.82%;
 }
 
-header .login button {
-  background: none;
-  border: 2px solid #efefef;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  padding: 13px 12px 11px;
-  transition: 0.3s border-color;
-}
-
-header .login button:hover {
-  border-color: #00aeef;
+footer .contact address {
+  font-style: normal;
 }
